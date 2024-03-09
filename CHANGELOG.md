@@ -1,3 +1,3 @@
-## 0.0.1
+## 1.0.0
 
-* TODO: Describe initial release.
+* Based on Shared Preferences 2.2.2
