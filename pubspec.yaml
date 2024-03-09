@@ -1,6 +1,7 @@
 name: type_shared_prefs
 description: "A Package that extends the shared prefs to a key value store which simplifies the api"
 version: 1.0.0
+repository: https://github.com/mazur-amazdev/type_shared_prefs
 
 environment:
   sdk: '>=3.3.0 <4.0.0'
