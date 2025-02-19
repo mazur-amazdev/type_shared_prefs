@@ -39,15 +39,20 @@ final class KeyValueStore {
   T? getValue<T>(String key) {
     switch (T) {
       case const (int):
-        return _prefs?.getInt(key) as T;
+        var object = _prefs?.getInt(key);
+        return object is T ? object as T : null;
       case const (String):
-        return _prefs?.getString(key) as T;
+        var object = _prefs?.getString(key);
+        return object is T ? object as T : null;
       case const (bool):
-        return _prefs?.getBool(key) as T;
+        var object = _prefs?.getBool(key);
+        return object is T ? object as T : null;
       case const (double):
-        return _prefs?.getDouble(key) as T;
+        var object = _prefs?.getDouble(key);
+        return object is T ? object as T : null;
       case const (List<String>):
-        return _prefs?.getStringList(key) as T;
+        var object = _prefs?.getStringList(key);
+        return object is T ? object as T : null;
       default:
         return null;
     }
